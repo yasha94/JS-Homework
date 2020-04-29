@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /************************************https://github.com/yasha94/JS-Homework**********************************************/
+        /***********************************path to my github*************************************/
+        //sleep function
+        function sleep(delay){
+            var start = new Date().getTime();
+            while(new Date().getTime() < start + delay);
+        }
+        /***********Q2************/
+        //function that print's name in array with 4 sec delay
+        function setTimeOut(names=['']){
+            for (var i = 0; i < names.length; i++){
+                console.log(names[i]);
+                sleep(4000);
+            }
+            
+        }
+        /***********Q2***********/
+        //funciton to return num's sqr
+        function sqr(num){
+            return num * num;
+        }
+        /*****************Q3********************/
+        //function that takes two number and return's the power
+        function power(num , power){
+            return num ** power;
+        }
+
+        /****************Q3**************************/
+        //function to randomize a num between 0 and 10 with selected time to sleep
+        function randNum(counter, sec){
+            for(var i = 0; i <= counter; i++){
+                var rand = Math.floor(Math.random() * 10);
+                console.log(rand);
+                sleep(sec * 1000);
+            }
+        }
+
+        namesToParse = ["jake","yossi","dani","shmuel","micha"];
+        var songName = "ashesofthewake"
+        setTimeOut(namesToParse);
+        console.log(sqr(2));
+        console.log(power(3,2));
+        randNum(3, 2);
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
