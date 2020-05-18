@@ -1,0 +1,69 @@
+.body{
+    background-color: rgba(88, 199, 199, 0.705);
+}
+
+table, th, td{
+    border: none;
+    padding: 10px;
+    
+}
+
+.table{
+    background-color: whitesmoke;
+    border-radius: 15px;
+    border: none;
+    
+}
+
+input[type="button"]{
+    box-shadow: 0 4px gray;
+}
+
+.clr_button{
+    background-color: rgb(54, 52, 52);
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 100%;
+}
+
+.num_buttons{
+    background-color: rgb(54, 52, 52);
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.op_buttons{
+    background-color: rgb(120, 78, 235);
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 100%;
+}
+
+input[type="text"]{
+    background-color: rgb(230, 81, 160);
+    text-align: left;
+    font-size: 16px;
+    border-radius: 16px;
+    width: 100%;
+    box-shadow: 0 4px gray;
+}
+
+div{
+    width: 100%;
+    padding: 15%;
+    padding-left: 35%;
+}
+

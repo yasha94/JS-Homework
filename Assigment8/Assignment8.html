@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Assignment8.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script>
+
+        function display_value(val){
+            document.getElementById("result").value+=val;
+        }
+
+        function calculate(){
+            var x = document.getElementById("result").value;
+            var y = eval(x);
+            document.getElementById("result").value = y;
+        }
+
+        function clr(){
+            document.getElementById("result").value = "";
+        }
+
+    </script>
+</head>
+<body class="body" >
+   <div>
+    <table class="table">
+        <tr>
+            <td><input type="button" class="clr_button" value="C" onclick="clr()"/></td>
+            <td colspan="3"><input type="text" id="result"/></td>
+        </tr>
+        <tr>
+            <td><input type="button" class="num_buttons" value="7" onclick="display_value('7')"/></td>
+            <td><input type="button" class="num_buttons" value="8" onclick="display_value('8')"/></td>
+            <td><input type="button" class="num_buttons" value="9" onclick="display_value('9')"/></td>
+            <td><input type="button" class="op_buttons" value="÷" onclick="display_value('/')"/></td>
+        </tr>
+
+        <tr>
+            <td><input type="button" class="num_buttons" value="4" onclick="display_value('4')"/></td>
+            <td><input type="button" class="num_buttons" value="5" onclick="display_value('5')"/></td>
+            <td><input type="button" class="num_buttons" value="6" onclick="display_value('6')"/></td>
+            <td><input type="button" class="op_buttons" value="*" onclick="display_value('*')"/></td>
+        </tr>
+
+        <tr>
+            <td><input type="button" class="num_buttons" value="1" onclick="display_value('1')"/></td>
+            <td><input type="button" class="num_buttons" value="2"onclick="display_value('2')"/></td>
+            <td><input type="button" class="num_buttons" value="3" onclick="display_value('3')"/></td>
+            <td><input type="button" class="op_buttons" value="-" onclick="display_value('-')"/></td>
+        </tr>
+
+        <tr>
+            <td><input type="button" class="num_buttons" value="0" onclick="display_value('0')"/></td>
+            <td><input type="button" class="op_buttons" value="." onclick="display_value('.')"/></td>
+            <td><input type="button" class="op_buttons" value="=" onclick="calculate()"/></td>
+            <td><input type="button" class="op_buttons" value="+" onclick="display_value('+')"/></td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
